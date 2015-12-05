@@ -1,15 +1,19 @@
 body {
-    width: 100% min-height: 100%;
+    width: 100%;
+    min-height: 100%;
     margin: 0;
-    background-color: rgb(245, 245, 245)
+    background-color: rgb(245, 245, 245);
+}
+
+p {
+    line-height: 28px;
+    margin: 16px auto;
+    color: #616161;
 }
 
 p,
 li {
     font-family: 'Roboto', sans-serif;
-    line-height: 28px;
-    margin: 16px auto;
-    color: #616161;
 }
 
 a:link,
@@ -17,17 +21,79 @@ a:visited {
     color: black;
     padding: inherit;
     text-decoration: none;
-    border-left: 3px #00BFA5;
-    border-left-style: solid;
+    border-left: 3px solid;
 }
 
-a:hover,
-a:active {
-	color: #26A69A;
+#home {
+    border-color: #00BFA5;
+}
+
+#home:hover,
+#home:active {
+    color: #1DE9B6;
+}
+
+#education {
+    border-color: #FF1744;
+}
+
+#education:hover,
+#education:active {
+    color: #FF5252;
+}
+
+#skills {
+    border-color: #FFD600;
+}
+
+#skills:hover,
+#skills:active {
+    color: #FFEA00;
+}
+
+#contact {
+    border-color: #FF4081;
+}
+
+#contact:hover,
+#contact:active {
+    color: #FF4081;
 }
 
 .shadow {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+}
+
+.ribbon_blue_grey {
+    background-color: #455A64;
+}
+
+.ribbon_indigo {
+    background-color: #3F51B5;
+}
+
+.ribbon_green {
+    background-color: #43A047;
+}
+
+.ribbon_purple {
+    background-color: #512DA8;
+}
+
+.divider_cyan {
+    color: #1DE9B6;
+}
+
+.divider_red {
+    color: #FF5252;
+}
+
+.divider_yellow {
+    color: #FFEA00;
+}
+
+.divider_pink {
+    color: #FF4081;
 }
 
 #container {
@@ -39,20 +105,18 @@ a:active {
 #ribbon {
     width: 100%;
     height: 50vh;
-    background-color: #455A64;
 }
 
 #divider {
     line-height: 1.6em;
     margin-bottom: 1.6em;
-    border-bottom: 1px solid #9E9E9E;
+    border-bottom: 2px solid;
 }
 
 #content_container {
     max-width: 1600px;
     width: calc(100% - 16px);
-    margin: 0 auto;
-    margin-top: -35vh;
+    margin: -35vh auto 0;
 }
 
 #header {
@@ -63,16 +127,17 @@ a:active {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     font-size: 50px;
-    margin: 0px;
+    margin: 0;
 }
 
 #header ul {
-    padding-left: 0px;
+    padding-left: 0;
+    padding-bottom: 10px;
 }
 
 #header li {
     display: inline-block;
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px 0 10px;
     font-size: 20px;
 }
 
@@ -82,8 +147,6 @@ a:active {
     padding: 80px 56px;
     width: calc(66.6666666667% - 16px);
     border-radius: 2px;
-    margin: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+    margin: 8px auto 50px;
+    min-height: 650px;
 }
