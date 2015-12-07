@@ -48,7 +48,7 @@ body {
     background-color: #43A047;
 }
 
-.container__ribbon--purple {
+.container__ribbon--orange {
     background-color: #FF9800;
 }
 
@@ -84,14 +84,6 @@ body {
 
 .header__title--large {
     font-size: 50px;
-}
-
-.header__title--fontroboto {
-    font-family: 'Roboto', sans-serif;
-}
-
-.header__title--fontlight {
-    font-weight: lighter;
 }
 
 .header__nav {
@@ -169,4 +161,36 @@ body {
 
 .header__divider--green {
     color: #76FF03;
+}
+
+@media only screen and (min-width: 300px) {
+
+	.container__contentbox {
+		margin: -45vh auto 0;
+	}
+
+	.contentbox__content {
+	    width: 100%;
+	    margin: 8px auto 20px;
+	}
+
+	.content__header {
+    	text-align: left;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+
+	.container__contentbox {
+		margin: -35vh auto 0;
+	}
+
+	.contentbox__content {
+	    width: calc(66.6666666667% - 16px);
+	    margin: 8px auto 50px;
+	}
+
+	.content__header {
+    	text-align: center;
+	}
 }
