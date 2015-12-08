@@ -7,6 +7,7 @@ body {
 
 .font {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .font--light {
@@ -66,6 +67,7 @@ body {
     border-radius: 2px;
     margin: 8px auto 50px;
     min-height: 650px;
+    min-width: 300px;
 }
 
 .content__header {
@@ -85,8 +87,8 @@ body {
 .content__wrapper {
     display: inline-block;
     margin-top: -18px;
-    padding-right: 50px;
     vertical-align: top;
+    width: 33%;
 }
 
 .wrapper__item {
@@ -121,7 +123,6 @@ body {
 
 .header__nav {
     padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 .nav__container {
@@ -129,6 +130,15 @@ body {
     display: inline-block;
     padding: 0 10px 0 10px;
     font-size: 20px;
+}
+
+.nav__ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.nav__li {
+    display: inline-block;
 }
 
 .nav__link {
@@ -187,11 +197,11 @@ body {
 }
 
 .header__divider--cyan {
-    color: #1DE9B6;
+    color: #00BFA5;
 }
 
 .header__divider--red {
-    color: #FF5252;
+    color: #FF1744;
 }
 
 .header__divider--yellow {
@@ -202,20 +212,40 @@ body {
     color: #76FF03;
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 50px) {
     .container__contentbox {
         margin: -45vh auto 0;
     }
     .contentbox__content {
         width: 100%;
         margin: 8px auto 20px;
+        padding: 40px 23px;
     }
     .content__header {
         text-align: left;
     }
 
     .content__wrapper {
-    	padding-right: 25px;
+    	width: 100%;
+    }
+
+    .nav__li {
+        display: inherit;
+    }
+}
+
+@media only screen and (min-width: 486px) {
+
+    .contentbox__content {
+        padding: 60px 36px;
+    }
+
+    .nav__li {
+        display: inline-block;
+    }
+
+    .content__header {
+        text-align: center;
     }
 }
 
@@ -226,12 +256,19 @@ body {
     .contentbox__content {
         width: calc(66.6666666667% - 16px);
         margin: 8px auto 50px;
+        padding: 80px 56px;
     }
     .content__header {
         text-align: center;
     }
 
+    .nav__li {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1539px) {
     .content__wrapper {
-    	padding-right: 50px;
+        width: 33%;
     }
 }
