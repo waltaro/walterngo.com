@@ -14,10 +14,6 @@ body {
     font-weight: lighter;
 }
 
-.font--large {
-    font-size: 50px;
-}
-
 .shadow {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
 }
@@ -89,10 +85,6 @@ body {
     margin-top: -18px;
     vertical-align: top;
     width: 33%;
-}
-
-.wrapper__item {
-    padding-bottom: 10px;
 }
 
 .content__list {
