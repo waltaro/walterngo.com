@@ -202,6 +202,7 @@ body {
     }
     .nav__li {
         display: inherit;
+        margin-left: -10px;
     }
 }
 
