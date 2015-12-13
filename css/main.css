@@ -76,6 +76,24 @@ body {
     color: #616161;
 }
 
+.content__list {
+    list-style-type: none;
+}
+
+.content__link {
+    color: #616161;
+    padding: inherit;
+    text-decoration: none;
+    border-left: 3px solid;
+    border-left-color: #FF9800;
+    padding-left: 10px;
+}
+
+.content__link:hover,
+.content__link:active {
+    color: #FF9800;
+}
+
 .content__wrapper {
     display: inline-block;
     margin-top: -18px;
